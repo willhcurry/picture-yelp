@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+<h4><%= currentUser %></h4>
+
+    <div class="container">
+        <div class="container">
+        <header class="jumbotron">
+            <h1>The List</h1>
+            <p>The memories</p>
+            <p>
+                <a  class="btn btn-primary btn-lg" href="/pictures/new">Add new picture</a>
+            </p>
+        </div>
+        </header>
+    
+    
+    
+        <div class ="row text-center" style="display: flex; flex-wrap: wrap;">
+            <% pictures.forEach(function(picture){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= picture.image %>">
+                        <h4><%= picture.name %></h4>
+                    </div>
+                    
+                    <p>
+                        <a href="/pictures/<%= picture._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                    
+                </div>
+            <% }); %>
+        </div>
+        
+    </div>
+
+<% include ../partials/footer %>

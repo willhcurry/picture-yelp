@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: 70px;
+  background: url(https://images.unsplash.com/photo-1432937202807-b918d6a647ef?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arizonia', Helvetica, sans-serif;
+  color: #D4AF37;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.container-header {
+  height: 30px;
+}
+
+.jumbotron {
+  background-color: #222;
+}
+
+
+.ariz {
+  font-family: 'Arizonia', Helvetica, sans-serif;
+  color: #D4AF37;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.navbar-inverse .navbar-brand {
+  color: #D4AF37;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #D4AF37;
+}
